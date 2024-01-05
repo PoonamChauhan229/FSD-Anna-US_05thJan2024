@@ -1,0 +1,42 @@
+- github > code+txt notes
+- VS code installed
+ gitbash
+- node
+
+
+git
+>web
+>git commands --code > push from the system
+
+basic commands
+git init
+git status
+branch
+adding up your root link
+git add .
+commit
+push
+
+git commands:
+
+1st step:
+
+>git init => initialize ur project
+>git add . => staging phase 
+>git commit -m "first commit" > move ahead 
+>git branch -M main > branch path
+>git remote add origin https://github.com/PoonamChauhan229/random-git-_test_delete.git >
+>git push -u origin main > origin main branch
+
+2nd step:
+git add .
+git commit -m ""
+git push
+
+
+update readme file
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+
+
+
