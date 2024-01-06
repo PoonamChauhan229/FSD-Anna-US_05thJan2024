@@ -40,3 +40,40 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 
 
 
+full stack web development
+>GIT
+>INTRO TO JAVASCRIPT
+>HTML
+>CSS
+>HTML CSS JS => DOM
+>ADvance JS
+> 2 projects
+>React > front end development > project based 
+>1 project
+>NodeJS > project  based 
+>Mongodb + MYSQL +EXPRESS SEVER
+
+
+GIT
+> profile creation
+
+VSCode
+> basic installations
+> intro to JS
+
+> JAVASCRIPT
+> datatypes:
+> variable declaration
+> operators
+> loops
+> scope of variables
+>functions
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+
+
+

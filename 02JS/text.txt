@@ -1,0 +1,28 @@
+website> html+css
+javascript> create functionalities/features> interactive website
+Eg: gmail,facebook whatsappweb etc...
+
+
+javascript>
+
+3 ways
+
+inside html 
+    > extenal js file
+    > internal scripting
+    > script tag inside your head
+
+> node is installed
+
+// comments
+// navbar
+//header
+// this functionality is creating new paragraph
+
+Market extensions
+>live server
+>html boilerplate
+>html css support
+>material icon theme
+>vs code icons
+
