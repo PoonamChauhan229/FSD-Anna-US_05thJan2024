@@ -152,4 +152,12 @@ for(var key in obj){
 
 // Questions:
 
+// Find the factorial of a Number
+var arr=[5]
+
+// Write an program for a table, which can easily be able to calculate any number table
+
+
+
+
 
