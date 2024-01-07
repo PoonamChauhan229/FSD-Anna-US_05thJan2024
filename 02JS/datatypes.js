@@ -74,9 +74,6 @@ console.log(arr[4])
 arr.length
 console.log(arr.length)
 
-
-
-
 // for loop
 
 // for(intiliaze,condition,increment/decremaent){
@@ -88,9 +85,11 @@ console.log(arr.length)
 console.log("for loop")
 for(var i=0;i<arr.length;i++){
     console.log(i,arr[i])
+    
 }
 
 var arr1=[1,3,4,5,"6","70","2A"] //89 as an answer
+//[1,4,5,6,7,71,3]
 
 console.log("91 as an answer")
 var sum=0;
@@ -104,5 +103,53 @@ for(var i=0;i<arr1.length;i++){
     // console.log(sum)
 }
 console.log(sum)//91
+
+var arr=[2,3,4,"hi","helloworld",true,false]
+// at 10 index i want to insert 100 as an element
+arr[10]=100;
+console.log(arr)
+
+// update the element in the array.
+// 0th index => 2 , >20
+arr[0]=20
+console.log(arr)
+
+
+
+
+// Object:
+    // In javascript > Object
+    // key and value pair
+    // {} represented
+
+    //students object data
+var obj={
+    // key:value
+    name:"Ann",
+    year:2024,
+    hobbies:"reading"
+}
+//in console> keys are arranged in alphabetical order
+console.log(obj)
+
+//access the object
+//dot operator . or square bracket ['key']
+
+console.log(obj.hobbies,obj.name)
+console.log(obj['name'])
+//insert a key:value inside the object
+obj.skills="javascript"
+console.log(obj)
+
+//update
+obj.year=2023;
+console.log(obj)
+
+// for in loop > objects
+for(var key in obj){
+    console.log(key,obj[key], obj.key)
+}
+
+// Questions:
 
 
