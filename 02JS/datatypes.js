@@ -54,3 +54,55 @@ console.log(typeof("true"))
 if(true){
     console.log("hey")
 }
+
+//Composite Datatypes
+// Array
+//[]=>represent an array
+//combination of heterogenous dataypes & seperated by the commas
+//[string, number, boolean]
+var arr=[2,3,4,"hi","helloworld",true,false]
+// indiidual element
+//How many elements?>7 elements
+//access the elements> index no
+//index no> start >0 end > n-1
+//1st element
+// arr[indexno]
+console.log(arr[0])
+console.log(arr[4])
+
+// length property
+arr.length
+console.log(arr.length)
+
+
+
+
+// for loop
+
+// for(intiliaze,condition,increment/decremaent){
+    //blick ofcode
+// }
+
+// 1-7
+//0-6
+console.log("for loop")
+for(var i=0;i<arr.length;i++){
+    console.log(i,arr[i])
+}
+
+var arr1=[1,3,4,5,"6","70","2A"] //89 as an answer
+
+console.log("91 as an answer")
+var sum=0;
+for(var i=0;i<arr1.length;i++){
+    // console.log(i,arr1[i])
+    sum=sum+parseInt(arr1[i])
+    // sum=0+1>1
+    // sum=1+3>4
+    //sum=4+4>8
+    //13+"6"
+    // console.log(sum)
+}
+console.log(sum)//91
+
+
