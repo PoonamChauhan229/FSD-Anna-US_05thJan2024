@@ -155,8 +155,42 @@ for(var key in obj){
 // Find the factorial of a Number
 var arr=[5]
 
+var num=arr[0]
+var fact=1;
+//5 times
+// var i=1 i<=num; i++
+// i=1 1<=5 true 1*1 =1
+// i=2 2<=5 true 1*2=2
+// i=3 3<=5 true 2*3=6
+// i=4 4<=5 true 6*4=24
+// i=5 5<=5 true 24*=120
+// i=6 6<=5 false terminate
+
+for(var i=1;i<=num;i++){
+    fact=fact*i
+    //console.log(fact)
+}
+console.log(fact)
+
+
 // Write an program for a table, which can easily be able to calculate any number table
 
+// 5
+// 10
+// 11
+// 12
+
+// 5*1=5
+// 5*2=10
+// 5*3=15
+// 5*4=20
+// ...5*12=60
+
+
+// 10*1=10
+// 10*2=20....
+
+// https://pythontutor.com/render.html#mode=display
 
 
 
