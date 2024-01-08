@@ -70,3 +70,49 @@ totalarr([1,3,4,5])// args //13
 // function1=> addition => 6
 // function 2=> fact of added num => 720
 
+// function return keyword
+
+function sum(){
+    // console.log(2+2)
+    return 2+2;
+}
+//console.log(sum())
+
+var a=sum()
+console.log(a)
+console.log(a+4)//4+4=8
+
+
+function random(){
+    // console.log(2+2)
+    return 0
+}
+console.log(random())
+
+//annoymous function
+// with no name
+
+var x=function(){
+    //block of code
+    // console.log(1)
+    return 5
+}
+// x()
+console.log(x())
+
+//arrow function:
+var y=()=>{
+    console.log("Arrow function")
+}
+y()
+
+var s=()=>12+12
+console.log(s())
+//109
+//function keyowrd
+//{}
+//return keyword
+//function is going ti execute in 1 line=>
+
+
+
