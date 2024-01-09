@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Methods of an array
+        //slice
+        //splice
+        //pop
+        //unshift
+        //map
+        //reduce
+        //filter
+        //join
+
+        //string methods
+
+        // split method
+        var arr=['788996']
+        //[7,8,8,9,9,6]
+        
+        console.log(arr[0].split(''))
+
+        // mdn docs
+
+        // map method react as well
+        //transforms an array
+        //element of an array
+        //returns an new array
+
+        // [1,2,3,4]=>2,3,4,5
+
+        // for loop
+        // strt
+        // consition
+        // print
+
+        var arr1=[1,20,30,40,50] 
+        const res1=arr1.map((element,index)=>element*2+index)
+        console.log(res1)
+        console.log(arr1)
+    
+        // filter method
+        //filter it out
+        //condition is true=> give the o/p
+        //false => ignore
+
+        var arr2=[1,3,8,10] //even no
+
+        // if(num%2==0) even
+
+        const res2=arr2.filter((element)=>element%2==0)
+        console.log(res2)
+
+        //odd using filter [1,3]
+
+        // reduce
+        //nos
+        //2345678=> add
+
+        // MRF methods are widely used
+
+        // accumulator
+        // element=>cv
+
+       const res5= arr2.reduce((acc,cv)=>acc+cv)
+       console.log(res5)
+
+        var arr2=[1,3,8,10]
+        const res6= arr2.reduce((acc,cv)=>acc+cv,100)
+        console.log(res6)
+
+
+        // array
+        //arry of objects
+        var student=[
+            {name:"abc",marks:50},
+            {name:"pqr",marks:60},
+            {name:"xyz",marks:40},
+        ]
+        //50,60,40
+        //60,70,50
+        // var res7=student.map((element)=>console.log(element.marks+10))
+        var res7=student.map((element)=>element.marks+10)
+        console.log(res7)
+
+        //filter marks>50
+        // var res8=student.filter((element)=>console.log(element.marks>50))
+
+        var res8=student.filter((element)=>element.marks>50)
+        console.log(res8)
+
+        //reduce
+        student.map((element)=>console.log(element))
+
+        var res9=student.reduce((acc,cv)=>acc+cv.marks,0)
+        console.log(res9)   
+        
+        //all 3 methods in 1
+        var newarr=[1,2,3,4]//even no
+        //2,4 =>12,14
+        
+        var res100=newarr.filter(element=>element%2==0).map((element)=>element+10).reduce((acc,cv)=>acc+cv)
+
+        console.log(res100)
+
+    // rotate an array by k times
+    // k=4
+
+    </script>
+</body>
+</html>
