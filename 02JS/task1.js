@@ -75,3 +75,8 @@ console.log(obj.abc)
 //convert into the object
 
 console.log(JSON.parse('{"a":"wyuy","b":"ioioi"}'))
+
+
+
+
+

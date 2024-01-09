@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var
+        // let
+        //const
+    //scope
+    // {
+    //     //SCOPE 
+    // }
+
+    // if(true){
+
+    // }
+
+    // for(){
+
+    // }
+
+    var a=10;
+    let b=20;
+    const c=30;
+    //global variables
+    {
+        console.log(a,b,c)//10 20 30
+        if(true){
+            console.log(a,b,c)
+        }
+    }
+
+    {
+        let x=100;//local variable
+        console.log(x)//100
+        console.log(b)//20
+    }
+   // console.log(x)// error: not defined
+
+
+    {
+        const v=30;
+        console.log(v)//30
+    }
+   // console.log(v)// error : not defined
+
+    // 
+    {
+        let g=90;
+        {
+            console.log(g)//90
+            const y=78;
+        }
+        //console.log(y)//not defined
+    }
+    // console.log(g)//not defined
+    // console.log(y)//not defined
+
+
+    // var=> block scope lexical scope
+
+    {
+        var x=100;
+        {
+            console.log(x);//100
+            var u=79;
+        }
+        console.log(u)//79
+    }
+    console.log(x)//100
+    console.log(u);//79
+
+    //var => functional scope
+
+    function fn1(){
+        var i=900;
+        let j=700;
+        console.log(1001)
+    }
+    fn1()
+    // console.log(i)// not defined
+    console.log(j)//not defined
+
+    
+   
+
+
+
+    </script>
+</body>
+</html>

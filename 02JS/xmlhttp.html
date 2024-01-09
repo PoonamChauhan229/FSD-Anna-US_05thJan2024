@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // HTTP METhods
+        // GET=> retrive the data
+        // POST => add the data
+        // PUT/PATCH=> updating the data
+        // DELETE => delete the data
+
+        // interact with the server via API
+        //xmlhttprequest
+
+        // Step1: Create an XMLHttpRequest Object=> new keyword
+        // Create an XHR object
+        //request is userdefined 
+
+        var request=new XMLHttpRequest()
+        //console.log(request)
+
+        // Step2:open a connection
+        //method=> GET
+        //url
+        request.open('GET','https://restcountries.com/v2/all')
+
+        // Step3:send an conection=> triggering + // Step 4:initiate the bridge
+        request.send()
+
+        // Step5:Server response
+
+        // window event=> onload 
+        //annoymous functions
+        request.onload=function(){
+            // console.log(1)
+            console.log(request.response)
+            console.log(JSON.parse(request.response))
+            var data=JSON.parse(request.response)
+            console.log(data[0].name)
+            // All the names from the 250 countries  list
+
+            for(var i=0;i<data.length;i++){
+               console.log(data[i].name)
+            }
+        }
+
+        // What is array of objects
+        // arr
+        //objects
+
+        // array of objects
+        // 10 students 
+        //10 array: => name age lastname
+        // 10 objects=> name:"x", age:16,lastname:"yuyuy"
+        //1 obj
+        //2 obj
+        //3 obj....10 obj
+        //  memory location
+        // access 1 1 at a time
+        var arr=[
+            {name:"x", age:16,lastname:"yjkj"},//oth index=> 1st ele
+            {name:"y", age:17,lastname:"yuklk"},//1st index=> 2nd ele
+            {name:"z", age:18,lastname:"yu"},
+            {name:"a", age:19,lastname:"ioyuy"},
+            {name:"b", age:26,lastname:"yuopopyuy"},
+            
+        ]
+       console.log(arr)
+       console.log(arr[0].lastname)
+
+       //find ages 
+       for (var i=0;i<arr.length;i++){
+        console.log(arr[i].age)
+        //16-26
+       }
+
+    // https://restcountries.com/v2/all
+    // https://jsonplaceholder.typicode.com/todos
+    // https://jsonplaceholder.typicode.com/users
+
+    // API:
+    // refer the docs
+    //
+    </script>
+    
+</body>
+</html>
