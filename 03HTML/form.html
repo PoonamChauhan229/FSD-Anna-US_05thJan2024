@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="fname">Fullname:</label>
+      <input type="text" name="fname" id="fname" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" /><br /><br />
+
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" id="pass" /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" /><br /><br />
+
+       <!-- Gender -->
+    <!-- group them name attribute -->
+    <!-- bind the input elements with the label tags -->
+    <!-- for attribute of label and id attribute of input -->
+    <input type="radio" name="gender" id="male" value="male"/>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female"/>
+    <label for="female">Female</label><br><br>
+
+      <!-- vehicles 
+    grouping not needed 
+    -->
+      <input type="checkbox" name="vehicle1" id="Bycycle" value="Bycycle"/>
+      <label for="Bycycle">Bycycle</label>
+
+      <input type="checkbox" name="vehicle2" id="bike" value="bike" />
+      <label for="bike">BIke</label>
+
+      <input type="checkbox" name="vehicle3" id="car" value="car"/>
+      <label for="car">Car</label>
+
+      <input type="checkbox" name="vehicle4" id="boat" value="boat" />
+      <label for="boat">Boat</label><br /><br />
+
+      <!-- which of service you do  -->
+      <!-- group=>name  slecte any 1-->
+      <!-- bind=> for and id -->
+      <input type="radio" name="employeetype" id="govt" value="govt"/>
+    <label for="govt">Government Job</label>
+    <input type="radio" name="employeetype" id="pvt" value="pvt"/>
+    <label for="pvt">Private Job</label><br><br>
+
+      <!-- acts like a button inside the form -->
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
