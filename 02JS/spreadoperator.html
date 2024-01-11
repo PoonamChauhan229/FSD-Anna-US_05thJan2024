@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Spread syntax=>...
+        var arr=[100,67,90,89]
+        console.log(arr.join(' '))
+        console.log(...arr)
+
+        //passsed params with just num
+        function sum(a,b,c){
+            return a+b+c
+        }
+        console.log(sum(1,2,3))
+
+         //passsed params with just arr
+
+         function add(arr){
+            var sum=0;
+            for(var i=0;i<arr.length;i++){
+                sum=sum+arr[i]
+            }
+            console.log(sum)
+
+         }
+         add([100,67,90,89])
+
+         // reduce method=>()
+         
+         var res=arr.reduce((acc,cv)=>acc+cv)
+         console.log(res)
+
+         //spread syntax operator
+
+         function total(a,b,c,d){
+            console.log(a,b,c,d)//declared
+            return a+b+c+d
+         }
+         //console.log(total(8,9,0,7));
+
+         console.log(total(...arr))
+
+         //rest parameter
+        //  ...
+         // where it will be passed
+         //function
+
+         //...rest
+         //...args
+         //...userdefined name
+        // var arr3=[500,200,400,500,100]
+        function test(a,b,c,d,e,...args){
+            console.log(a,b,c,d,args)
+        }
+        test(10,20,30,78,90,80,100,10,10,101,0)//args=>6
+
+
+        function test1(a,b,...args){
+            console.log(a,b)
+            console.log(args)
+        }
+        test1(10,20,30,78,90,80,100,10,10,101,0)//args=>6
+
+
+        // used
+        //rest
+        //spread
+        //reduce
+
+
+
+         var arr2=[500,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500,100,200,400,500]
+         function example(...args){
+            console.log(args)//outpt> array
+            //forloop
+            //reduce
+            let result=args.reduce((acc,cv)=>acc+cv)
+            console.log(result)//13600
+           
+
+         }
+         example(...arr2)
+         console.log(...arr2)
+         console.log(arr2.length)
+
+         //use case spread
+         let arr5=[0,1,2]
+         let arr6=[3,4,5]
+         console.log(arr5.concat(arr6))
+         console.log(...arr5,...arr6)
+         console.log([...arr5,...arr6])
+
+         //use case spread obj
+         const obj1={fname:"abc",age:67}
+         const obj2={lname:"opi",year:2090}
+
+         console.log({...obj1,...obj2})
+
+
+        //  Destructing
+
+        //unpack the values from array/object
+
+        let arr78=["abc","pqr",25,"javascript"]
+
+        let [fname,lname,age,enrolled]=arr78
+
+        console.log(fname,lname,age,enrolled)
+        
+        //object
+         let obj6={firstname:"Poonam",marks:67}
+       let {firstname:firstname,marks:marks}=obj6
+       console.log(firstname)
+       console.log(obj6.firstname)
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
