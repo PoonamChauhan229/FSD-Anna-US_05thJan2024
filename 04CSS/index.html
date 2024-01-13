@@ -5,9 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    div{
+        border:10px solid blue;
+        /* property:value;
+            //obj=> key :value
+        */
+        height:110px;
+        width:280px;
+        background-color: black;
+        color: red;
+        font-size: 100px;
+    }
+    #testid1{
+        /* //css */
+        border:10px solid yellowgreen;
+        height:110px;
+        width:280px;
+        background-color: black;
+        color: red;
+        font-size: 100px;
+    }
+    .testclass1{
+        border:10px solid green;
+        height:110px;
+        width:280px;
+        background-color: black;
+        color: red;
+        font-size: 100px;
+    }
+</style>
 <body>
     
-    <div></div>
+    <!-- tag selector -->
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JS</div>
+
+    <!-- id selector -->
+    <p id="testid1">XYZ</p>
+
+    <!-- class selector -->
+
+
+    <h1 class="testclass1">ABCD</h1>
+    <h6 class="testclass1">YUIL</h6>
+    <p class="testclass1">GHJK</p>
+
+    <span style="color:brown;font-size:30px;">Lorem ipsum dolor sit amet.</span>
+    <h5>What is the your <span style="color: yellow;">name</span></h5>
+    <!-- name : color yellow -->
+
+    <h3><span style="color:red;">*</span> <i>This feilds are mandatory!!!</i></h3>
 </body>
 </html>
 
@@ -18,7 +67,7 @@ external=>seperate file=> style.css/index.css
 
 
 selectors:
-tag=> tagname=>div{//css}
+tag=> tagname=>div{//css}=> 10 divs the design will be applied to all
 id => idname=>#idname{//css}//unique
 class=>classname=>.classname{//css} 1 or more than 1
 class attribute
