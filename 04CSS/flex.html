@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Document</title>
+</head>
+<style>
+    /* div{
+        background-color: chocolate !important;
+    } */
+
+    /* space-around
+     | A | B | C |    
+    */
+
+    /* space-between
+     |A | B | C|    
+    */
+    .parentDiv{
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-direction:row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* width:350px; */
+        border: 5px solid black;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* gap:2%; */
+        justify-content: space-evenly;
+    }
+    .subitem{
+        
+        background-color: blueviolet;
+        border: 1px solid red;
+        height: 30px;
+        width:50px;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+
+    }
+    .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid black;
+}
+
+.box div {
+  width: 100px;
+  height: 300px;
+  border:1px solid black;
+}
+</style>
+<body>
+    <!-- <div style="background-color: pink;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, unde.</div> -->
+
+    <!-- main div=> parent div -->
+    <!-- flex property to the parent div -->
+    <!-- flex,grid => display -->
+    <div class="parentDiv">
+        <!-- child div -->
+        <div class="subitem">ABC</div>
+        <div class="subitem">XYZ</div>
+        <div class="subitem">PQR</div>
+        <div class="subitem">TYU</div>
+        <div class="subitem">LMN</div>
+    </div>
+
+    <div class="box">
+        <div>A</div>
+    </div>
+</body>
+</html>
