@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <style>
-    div{
+    .div1{
         position: static;
         left:200px;
         border: 1px solid red;
@@ -30,19 +30,81 @@
         right bottom
         */
     }
-</style>
+    .div2{
+        border: 1px solid green;
+        position: relative;
+        left:50px;
+        top:30px;
+        /* trying to move from its actual place
+        does hace effect
+        they are afftectd >> left right top bottom
+        it is disturding he doc flow        
+        */
+    }
+    .div3{
+        border:3px solid brown;
+        position: absolute;
+        top:40px;
+        left:50px;
+        /* the sfift is happening ffrom the body
+        
+        */
+    }
+    .div4{
+        border:3px solid pink;
+        position: absolute;
+        top:50px;
+        left:60px;
+        /* the sfift is happening ffrom the body
+        
+        */
+    }
+    .test{
+        position: relative;
+        border:1px solid blue;
+        height:200px;
+        width:400px;
+    }
+    .div5{
+        position: sticky;
+        /* scrollbar */
+        /* it wont leave its position */
+        top:30px;
+        /* it will show this when it reaches to the 30px */
+        background-color: black;
+    }
+    .div6{
+        position:fixed;
+        /* scrollbar */
+        top:50px;
+        left:45px;
+        background-color: blueviolet;
+    }
+ </style>
 <body>
-    <div>Hello WOrld</div>
+    <div class="div1">Hello WOrld</div>
+    <hr>
+    <div class="div2">Hello WOrld</div><hr>
+    <div class="div3">Hello WOrld</div><hr>
+    <!-- parent -->
+    <div class="test">
+        <div class="div4">Hello WOrld</div>
+    </div>
+    <div class="div5">Hello WOrld</div>
+    <div class="div6">Hello World</div>
+    <p style="padding-bottom:700px; border: 1px solid navajowhite;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus dolorem reprehenderit eius assumenda, exercitationem, deleniti itaque repellendus veritatis nesciunt officiis temporibus neque nihil perspiciatis tempora nostrum inventore cupiditate, dignissimos maxime ea velit! Est odit distinctio consectetur iusto qui numquam alias ex impedit unde! Enim corporis nostrum expedita porro error iste! Soluta, repellat quidem accusantium laboriosam deserunt iusto autem blanditiis, quos itaque optio maiores perspiciatis deleniti sed mollitia possimus dolore dolorem provident ipsa ullam sunt sapiente, molestiae cupiditate! Incidunt et id nulla quos aut dolorum rem assumenda illum eaque, eum rerum, quisquam fugit ab aliquid porro debitis sunt! Cum, veniam repudiandae nesciunt distinctio odio eligendi pariatur sequi laboriosam aspernatur error! Ea, ut iusto eligendi quae eos inventore aut magnam aliquam. Necessitatibus, harum ex? Eveniet, repellendus, ad possimus temporibus aliquid eum, at praesentium molestias odio tempore nulla reiciendis inventore ullam a maxime tenetur! Reprehenderit sit pariatur, deleniti distinctio, consectetur nostrum ut quo repellendus similique ab nulla delectus? Necessitatibus minus porro expedita omnis consequatur! Reprehenderit maxime nemo nihil debitis magni dolorum deserunt neque optio similique repellat? Repellendus consequatur reprehenderit nobis tenetur sapiente. Voluptate doloribus odio expedita consectetur qui obcaecati, nisi sapiente eos placeat eligendi. Ex ut architecto illo perferendis dolore vero ipsam voluptates a mollitia maxime. Quo dolorum vel libero? Vero eos laboriosam minus inventore. Expedita accusamus officia similique! A, eos, fuga aperiam iste porro vero similique molestias alias optio, nam necessitatibus unde dolor exercitationem ullam illum adipisci. Eveniet repudiandae tenetur nesciunt! Repellat tempore in autem ducimus omnis, voluptatum porro! Illo at explicabo incidunt blanditiis iste quidem totam sint aspernatur, accusantium mollitia repudiandae dolor sunt, porro aut quae ipsa labore beatae, autem in. Consequuntur quos corrupti praesentium maiores, nemo, exercitationem vitae laborum delectus facere iusto quia. Odio, quasi consectetur repellat voluptates aliquam possimus repudiandae natus accusantium reprehenderit hic aspernatur enim, soluta, nam voluptate? Dolore iste, aperiam laudantium assumenda molestias sed aut, illo facere vel, voluptates perspiciatis veniam cum omnis! Tenetur eius possimus consectetur non sequi veritatis voluptate suscipit perspiciatis corporis ea unde rem fugiat facilis atque odit voluptatum dicta alias eveniet odio doloribus, blanditiis nisi! Dolor enim dignissimos quod cum dolorem tempore illo asperiores eius nemo vel repellat rem omnis quas minima voluptatibus, voluptatem quidem inventore quisquam rerum amet in! Dolorum nam officia obcaecati tempora, deleniti non veniam alias eius natus repudiandae. Architecto nihil deleniti esse rem dolor deserunt, minus assumenda rerum porro excepturi fugit labore culpa debitis dolores quis explicabo voluptatum sint beatae, cumque alias, quas eveniet! Maiores, recusandae est debitis vero nesciunt minus accusamus in obcaecati fugiat, laborum eligendi aut nostrum, nihil et. Dignissimos at laborum libero debitis error commodi placeat esse molestias minus saepe, maiores officia est natus ab quasi perferendis ducimus fuga itaque tempora voluptate quod odio quisquam dolorum modi. Quasi cupiditate minus dolorem molestiae enim voluptate harum. Officia maxime repudiandae quaerat a sint. Error ullam quia impedit exercitationem inventore magni nisi maxime consequuntur, tempore, voluptas cupiditate earum mollitia! Dolorum, nostrum eos! Porro a ad laboriosam sit, deserunt expedita praesentium, accusamus magni totam omnis, odit aut molestias architecto.</p>
     <!-- position > placing your elements
     line after line
 
     5 in all
 
     static >default property
-
-    sticky
     absolute
     relative
+    
+    sticky
+    
     fixed
 
     
